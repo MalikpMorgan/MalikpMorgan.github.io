@@ -1,0 +1,106 @@
+
+body {
+    background-color: #f3f4f5;
+   
+ }
+
+ .grid{
+    padding-left: 100px;
+    
+ }
+ 
+ .grid-item { width: 25%; }
+ .grid-item--width2 { width: 20%; }
+ 
+ .grid-sizer,
+ .grid-item { width: 20%; }
+ 
+ h1, time {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: black;
+ }
+ 
+ h2{
+ font-family: 'IBM Plex Sans ', sans-serif;  
+ }
+   
+ 
+ p {
+    font-family: 'IBM Plex Mono', monospace;
+ }
+ 
+ h3, a{
+   
+     font-family: 'IBM Plex Sans', sans-serif;
+ }
+ 
+ nav div.Right{
+
+    float:right;
+    padding-top: 0;
+    list-style-type: none;
+    padding-right: 40px;
+    color:black;
+ }
+ 
+ 
+ 
+ #intro {
+    text-align: center;
+ }
+ 
+ nav{
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    overflow: hidden;
+ }
+ 
+ nav  #namePlate{
+    float: left;
+    font-family: 'IBM Plex Sans ', sans-serif; 
+    font-size: 25px;
+    font-style: bold;
+    padding-left: 40px;
+    margin-left: 0;
+    color:black;
+ }
+ 
+nav img#logo{
+ 
+   float: none;
+   position: absolute;
+   top: 0%;
+   left: 45%;
+   padding-top: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 95px;
+   height: 90px;
+
+ }
+
+
+
+
+ p.copyright{
+    position: fixed;
+    bottom:0;
+    right:0;
+    
+   
+ }
+
+ul.icons{
+   
+   bottom: 0;
+   list-style-type:none ;
+   padding-left: 0;
+   position: fixed;
+   
+}
+
+ion-icon{
+   font-size: 24px;
+}
