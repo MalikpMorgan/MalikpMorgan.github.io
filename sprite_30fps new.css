@@ -1,0 +1,175 @@
+@keyframes play60 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -9000px 0px;
+  }
+}
+.shapeshifter {
+  position: absolute;
+  top: 12px; right: 10.5%;
+  animation-duration: 2000ms;
+  animation-timing-function: steps(60);
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 20;
+}
+.shapeshifter.play {
+  animation-name: play60;
+}
+
+@media (max-width: 600px) {
+  
+}
+
+body
+{
+   width: 100%;
+   text-align: center;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+   font-size:16px;
+   background-color: #FFF;
+}
+
+.section_div {
+  width: 90%;
+  background-color: #FFF;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  /*border: 1px solid #AAA;*/
+}
+
+hr
+{
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+table
+{
+   padding: 5px;
+}
+
+table.pub_table,td.pub_td1,td.pub_td2
+{
+   border-collapse: collapse;
+   border-bottom: 0px solid #9B9B9B;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   padding-left: 10px;
+   width: 90%;
+}
+td.pub_td1
+{
+   width: 90px;
+}
+
+td.paper_heading
+{
+   color: #3B3B3B;
+   font-weight: 700;
+   font-size:20px;
+}
+tr {
+   background-color: #FFF;
+}
+
+div#container
+{
+   margin-left: auto;
+   margin-right: auto;
+   width: 1200px;
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   text-align: left;
+   position: relative;
+   background-color: #FFF;
+}
+div#DocInfo
+{
+   color: #9B9B9B;
+   height: 128px;
+}
+h4,h3,h2,h1
+{
+   color: #3B3B3B;
+}
+h2
+{
+   font-size:130%;
+}
+p
+{
+   color: #000;
+   margin-bottom: 20px;
+}
+p.caption
+{
+   color: #9B9B9B;
+   text-align: left;
+   width: 600px;
+   font:11px helvetica,sans-serif;
+}
+p.caption2
+{
+   color: #9B9B9B;
+   text-align: left;
+   width: 800px;
+   font:11px helvetica,sans-serif;
+}
+#header_img
+{
+   position: absolute;
+   top: 0px; right: 0px;
+}
+a:link,a:visited
+{
+   color: #1367a7;
+   text-decoration: none;
+}
+
+
+body {
+   background-color: #FFF;
+}
+#personal_info {
+   background-color: #FFF;
+}
+p.announcement {
+   padding: 10px;
+   background-color: #EEE;
+}
+img.teaser_img {
+   width: 256px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border: 0px solid black
+}
+img.header_img {
+   width: 1024px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border: 0px solid black
+}
+img.photo_of_me {
+   border-radius: 20px;
+}
+div.teaser_img_div {
+   width: 30%;
+}
+table.personnel td {
+   padding: 16px;
+   vertical-align: top
+}
