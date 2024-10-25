@@ -13,12 +13,9 @@ let flying = 0;
 
 
 function setup() {
-    canvas =createCanvas(ww, wh, WEBGL);
-     cols = 70;
-     rows = 70;
-     console.log(cols,rows);
- 
-     
+    canvas = createCanvas(ww, wh, WEBGL);
+    cols = 70;
+    rows = 70;
 }
 
 function draw() {
@@ -40,10 +37,12 @@ function draw() {
     noFill();
     colorMode(HSB);
     stroke(255, 204, 100);
-    //stroke('green');
     strokeWeight(1);
-    translate(-width/2-250, -height/3);
+    
+    // Center the terrain
+    translate(-width/2-250, -height/3-250, -550);
     rotateX(PI/3);
+
     for (let i = 0; i < rows-1; i++) {
     beginShape(TRIANGLE_STRIP);
     for (let m = 0; m < cols; m++) {   
@@ -59,14 +58,13 @@ function draw() {
 }
 
 window.onresize = function() {
-    // assigns new values for width and height variables
-    draw();
+    // Update width and height variables
     ww = window.innerWidth;
     wh = window.innerHeight;  
-    canvas.size(ww,wh);
-  }
-
-
+    
+    // Resize the canvas
+    resizeCanvas(ww, wh);
+}
 
 // This is code that make the terrain 3d
   //angleMode(DEGREES);
