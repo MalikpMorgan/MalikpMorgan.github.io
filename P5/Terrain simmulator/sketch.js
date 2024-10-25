@@ -40,7 +40,7 @@ function draw() {
     strokeWeight(1);
     
     // Center the terrain
-    translate(-width/2-250, -height/3-250, -550);
+    translate(-width/2, -height/3-250, -550);
     rotateX(PI/3);
 
     for (let i = 0; i < rows-1; i++) {
