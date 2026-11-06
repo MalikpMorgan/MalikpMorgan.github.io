@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="Privacy policy for malikmorg — a personal, read-only Pinterest integration that accesses an authorized user's account, boards, and pins only at that user's request." />
+<link rel="icon" href="data:," />
+<title>malikmorg — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#fdfcfb;
+    --surface:#f5f2ee;
+    --surface-2:#efe9e2;
+    --ink:#1c1917;
+    --ink-2:#44403c;
+    --muted:#6b6560;
+    --line:#e3ddd4;
+    --line-strong:#d1c9bc;
+    --accent:#a61e2e;
+    --accent-soft:#fbecec;
+    --accent-ink:#7f1622;
+    --ok:#1f5c3a;
+    --ok-bg:#eaf4ec;
+    --radius:14px;
+    --max:880px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#161311;
+      --surface:#1e1a18;
+      --surface-2:#26211e;
+      --ink:#f0ebe4;
+      --ink-2:#d6cfc6;
+      --muted:#a79e94;
+      --line:#332d29;
+      --line-strong:#4a423c;
+      --accent:#f08a94;
+      --accent-soft:#2e1f22;
+      --accent-ink:#f5aeb5;
+      --ok:#8fd0a4;
+      --ok-bg:#1c2b21;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration-color:color-mix(in srgb, var(--accent) 45%, transparent); text-underline-offset:3px}
+  a:hover{text-decoration-color:var(--accent)}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 22px 72px}
+  .top-rule{height:5px; background:var(--accent); }
+  @media (prefers-color-scheme: dark){ .top-rule{background:#c62f3f} }
+  header{padding:44px 0 28px}
+  .brand{
+    display:flex; align-items:center; gap:12px; margin-bottom:22px;
+  }
+  .brand-mark{
+    width:38px; height:38px; border-radius:9px; background:var(--ink); color:var(--bg);
+    display:flex; align-items:center; justify-content:center;
+    font-family:"Newsreader", Georgia, serif; font-weight:700; font-size:19px; line-height:1;
+  }
+  .brand-text{line-height:1.15}
+  .brand-text strong{display:block; font-size:17px; letter-spacing:-.01em}
+  .brand-text span{font-size:13px; color:var(--muted)}
+  .meta-row{
+    display:flex; flex-wrap:wrap; gap:8px 18px; align-items:center;
+    font-size:13.5px; font-weight:600; letter-spacing:.02em; color:var(--muted);
+    text-transform:uppercase;
+  }
+  .meta-row .dot{width:4px;height:4px;border-radius:50%;background:var(--line-strong)}
+  h1{
+    font-family:"Newsreader", Georgia, serif;
+    font-size:clamp(44px, 8vw, 68px);
+    line-height:.98; letter-spacing:-.02em; font-weight:600;
+    margin:16px 0 16px;
+  }
+  .lede{
+    font-size:19px; line-height:1.55; color:var(--ink-2);
+    max-width:640px; margin:0;
+  }
+  .lede strong{color:var(--ink)}
+  .glance{
+    margin:32px 0 8px;
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .glance-head{
+    padding:16px 22px 0;
+    font-size:12.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--muted);
+  }
+  .glance-grid{display:grid; grid-template-columns:1fr 1fr 1fr; }
+  .glance-item{padding:14px 22px 20px}
+  .glance-item + .glance-item{border-left:1px solid var(--line)}
+  .glance-item h3{font-size:15px; margin:0 0 6px; display:flex; align-items:center; gap:8px}
+  .glance-item p{font-size:14.5px; line-height:1.55; color:var(--ink-2); margin:0}
+  .badge{
+    flex:0 0 auto; width:22px; height:22px; border-radius:50%;
+    display:inline-flex; align-items:center; justify-content:center;
+    font-size:12px; font-weight:800;
+  }
+  .badge-yes{background:var(--ok-bg); color:var(--ok)}
+  .badge-no{background:var(--accent-soft); color:var(--accent-ink)}
+  .badge-ctrl{background:var(--surface-2); color:var(--ink)}
+  .layout{display:grid; grid-template-columns:210px 1fr; gap:44px; margin-top:36px; align-items:start}
+  nav.toc{
+    position:sticky; top:24px;
+    font-size:14px;
+  }
+  nav.toc p{font-size:12px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin:0 0 10px}
+  nav.toc ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px; counter-reset:toc}
+  nav.toc a{
+    display:block; padding:6px 10px; margin-left:-10px; border-radius:8px;
+    color:var(--ink-2); text-decoration:none; line-height:1.35;
+  }
+  nav.toc a:hover{background:var(--surface); color:var(--ink)}
+  nav.toc a.active{background:var(--surface); color:var(--ink); font-weight:600}
+  main{min-width:0}
+  section{padding:28px 0 6px; border-top:1px solid var(--line)}
+  section:first-child{padding-top:4px; border-top:none}
+  h2{
+    font-family:"Newsreader", Georgia, serif;
+    font-size:27px; line-height:1.2; font-weight:600; letter-spacing:-.01em;
+    margin:0 0 12px; scroll-margin-top:24px;
+  }
+  section h2 .num{color:var(--accent); font-size:20px; vertical-align:2px; margin-right:8px; font-family:"Public Sans",sans-serif; font-weight:700}
+  h3{font-size:16.5px; margin:22px 0 6px}
+  p{margin:0 0 14px; color:var(--ink-2)}
+  p strong, li strong{color:var(--ink)}
+  ul{margin:0 0 16px; padding-left:22px; color:var(--ink-2)}
+  li{margin-bottom:7px}
+  li::marker{color:var(--accent)}
+  code{
+    font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size:.88em; background:var(--surface-2); border:1px solid var(--line);
+    padding:1px 6px; border-radius:6px; color:var(--ink); white-space:nowrap;
+  }
+  .scope-list{border:1px solid var(--line); border-radius:12px; overflow:hidden; margin:16px 0 18px}
+  .scope-row{display:grid; grid-template-columns:190px 1fr; }
+  .scope-row + .scope-row{border-top:1px solid var(--line)}
+  .scope-row dt{
+    padding:13px 16px; background:var(--surface);
+    font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:13.5px; font-weight:600; color:var(--ink);
+    word-break:break-word;
+  }
+  .scope-row dd{padding:13px 16px; margin:0; font-size:15px; color:var(--ink-2)}
+  .callout{
+    background:var(--accent-soft); border-radius:12px; padding:16px 18px; margin:18px 0;
+  }
+  .callout p{margin:0; font-size:15.5px; color:var(--ink-2)}
+  .callout p strong{color:var(--ink)}
+  .plain-note{background:var(--surface); border-radius:12px; padding:16px 18px; margin:18px 0}
+  .plain-note p{margin:0; font-size:15.5px}
+  footer{
+    margin-top:44px; padding-top:22px; border-top:1px solid var(--line);
+    font-size:14.5px; color:var(--muted); display:flex; flex-wrap:wrap; gap:6px 22px; justify-content:space-between;
+  }
+  footer p{margin:0; color:var(--muted)}
+  @media (max-width: 760px){
+    body{font-size:16px}
+    header{padding:32px 0 20px}
+    .glance-grid{grid-template-columns:1fr}
+    .glance-item + .glance-item{border-left:none; border-top:1px solid var(--line)}
+    .layout{grid-template-columns:1fr; gap:8px}
+    nav.toc{position:static; background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 18px}
+    nav.toc ol{display:grid; grid-template-columns:1fr 1fr; gap:2px 14px}
+    nav.toc a{margin-left:0; padding:5px 6px}
+    .scope-row{grid-template-columns:1fr}
+    .scope-row dd{padding-top:8px}
+    .scope-row dt{padding-bottom:4px}
+  }
+  @media print{
+    nav.toc{display:none}
+    .layout{grid-template-columns:1fr}
+    body{background:#fff; color:#000}
+  }
+</style>
+</head>
+<body>
+<div class="top-rule" aria-hidden="true"></div>
+<div class="wrap">
+
+  <header>
+    <div class="brand" aria-label="malikmorg">
+      <div class="brand-mark" aria-hidden="true">m</div>
+      <div class="brand-text">
+        <strong>malikmorg</strong>
+        <span>Privacy Policy</span>
+      </div>
+    </div>
+    <div class="meta-row">
+      <span>Last updated November 6, 2026</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Effective November 6, 2026</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="lede">This policy covers the <strong>malikmorg</strong> personal, read-only Pinterest integration operated by Malik Morgan. It explains what Pinterest data the integration can access, why, and what it never does with that data.</p>
+
+    <div class="glance" aria-label="Summary">
+      <div class="glance-head">At a glance — malikmorg</div>
+      <div class="glance-grid">
+        <div class="glance-item">
+          <h3><span class="badge badge-yes" aria-hidden="true">✓</span> Read-only access</h3>
+          <p>It can view an authorized account, its boards, and its pins. It cannot create, edit, or delete anything on Pinterest.</p>
+        </div>
+        <div class="glance-item">
+          <h3><span class="badge badge-no" aria-hidden="true">✕</span> Never sold or shared</h3>
+          <p>Pinterest data accessed through malikmorg is not sold, rented, used for advertising, or shared for marketing.</p>
+        </div>
+        <div class="glance-item">
+          <h3><span class="badge badge-ctrl" aria-hidden="true">◐</span> You stay in control</h3>
+          <p>Access only begins after you authorize it on Pinterest, and you can revoke it at any time in your Pinterest settings.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Contents">
+      <p>Contents</p>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#data-accessed">Data accessed</a></li>
+        <li><a href="#not-collected">What is not collected</a></li>
+        <li><a href="#how-used">How data is used</a></li>
+        <li><a href="#sharing">Sharing</a></li>
+        <li><a href="#storage">Storage &amp; retention</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#choices">Your choices</a></li>
+        <li><a href="#cookies">Cookies &amp; tracking</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section id="overview" aria-labelledby="h-overview">
+        <h2 id="h-overview"><span class="num">01</span>Overview</h2>
+        <p><strong>malikmorg</strong> is the name used for this integration and for this privacy policy page. The integration (the “App”) connects to Pinterest through Pinterest’s official API so that its operator, <strong>Malik Morgan</strong> (Pinterest: <strong>@malikmorgan16</strong>), can view and work with Pinterest content he has authorized access to — for example, reviewing boards and pins he has saved for a creative project.</p>
+        <p>The App is a personal tool operated under the name malikmorg. It is not a public product, it does not offer accounts to the general public, and it does not provide a service to third parties in exchange for their Pinterest data.</p>
+        <p>By authorizing the malikmorg App on Pinterest, you agree to the practices described here for the data Pinterest makes available through that authorization.</p>
+      </section>
+
+      <section id="data-accessed" aria-labelledby="h-data">
+        <h2 id="h-data"><span class="num">02</span>Information accessed through Pinterest</h2>
+        <p>The malikmorg App requests only the following read-only Pinterest API permissions (scopes). Nothing beyond these scopes is requested:</p>
+
+        <dl class="scope-list">
+          <div class="scope-row">
+            <dt>user_accounts:read</dt>
+            <dd>Basic account information Pinterest provides for the authorized account, such as username, display name, profile image, and account type.</dd>
+          </div>
+          <div class="scope-row">
+            <dt>boards:read</dt>
+            <dd>Boards belonging to or accessible by the authorized account — including board name, description, privacy setting, and pin counts.</dd>
+          </div>
+          <div class="scope-row">
+            <dt>pins:read</dt>
+            <dd>Pins on those boards — including pin title, description, image, destination link, and the board each pin belongs to.</dd>
+          </div>
+        </dl>
+
+        <p>Data is retrieved from Pinterest only when the operator makes a request that needs it — for example, asking to list boards or to review the pins on a specific board. The App does not continuously monitor a Pinterest account in the background.</p>
+      </section>
+
+      <section id="not-collected" aria-labelledby="h-not">
+        <h2 id="h-not"><span class="num">03</span>What is not collected</h2>
+        <ul>
+          <li><strong>No Pinterest password.</strong> Sign-in and authorization happen entirely on Pinterest. The App never sees or stores your Pinterest password.</li>
+          <li><strong>No write access.</strong> The App has no permission to create, edit, move, or delete boards or pins, and it does not request those permissions.</li>
+          <li><strong>No messages or private communications</strong> from Pinterest, and no payment, billing, or financial information.</li>
+          <li><strong>No data from people who have not authorized the App,</strong> beyond Pinterest content that is already public.</li>
+          <li><strong>No location data, contacts, or files</strong> from your device in connection with Pinterest access.</li>
+        </ul>
+      </section>
+
+      <section id="how-used" aria-labelledby="h-used">
+        <h2 id="h-used"><span class="num">04</span>How information is used</h2>
+        <p>Information accessed through Pinterest is used solely to carry out the operator’s own requests, including:</p>
+        <ul>
+          <li>Displaying and reviewing the authorized account’s boards and pins;</li>
+          <li>Searching, organizing, and referencing saved pins — for example, gathering visual references for a video game / story idea;</li>
+          <li>Confirming that the connection to Pinterest is working correctly.</li>
+        </ul>
+        <div class="callout">
+          <p><strong>Not used for:</strong> advertising, profiling, building audiences, training models for third parties, credit or eligibility decisions, or any form of automated marketing.</p>
+        </div>
+      </section>
+
+      <section id="sharing" aria-labelledby="h-sharing">
+        <h2 id="h-sharing"><span class="num">05</span>How information is shared</h2>
+        <p><strong>It isn’t, in the ordinary course of use.</strong> Pinterest data accessed through malikmorg is:</p>
+        <ul>
+          <li><strong>Never sold or rented</strong> to any third party;</li>
+          <li><strong>Never shared for advertising or marketing</strong> purposes;</li>
+          <li><strong>Never published</strong> as someone else’s private content. Public board and pin content remains attributed to its Pinterest source.</li>
+        </ul>
+        <p>The only exceptions are narrow: data may be disclosed if required by law, a valid court order, or to protect the rights and safety of the operator or others. Pinterest itself processes data under <a href="https://policy.pinterest.com/en/privacy-policy" target="_blank" rel="noopener">Pinterest’s own Privacy Policy</a> when the API is used.</p>
+      </section>
+
+      <section id="storage" aria-labelledby="h-storage">
+        <h2 id="h-storage"><span class="num">06</span>Data storage &amp; retention</h2>
+        <ul>
+          <li><strong>Access credentials</strong> (OAuth access and refresh tokens issued by Pinterest) are held in secure credential storage provided by the platform hosting the App — not in this page, and not in plain text in chat or documents.</li>
+          <li><strong>Board and pin data</strong> is fetched on demand to answer a request. It is not built into a permanent, separate database for resale or long-term profiling.</li>
+          <li><strong>Retention:</strong> any working copies created while fulfilling a request are kept only as long as they are useful for that task. When access is revoked or the App is disconnected, its tokens are no longer usable and should be deleted from credential storage.</li>
+        </ul>
+      </section>
+
+      <section id="security" aria-labelledby="h-security">
+        <h2 id="h-security"><span class="num">07</span>Security</h2>
+        <p>Access uses Pinterest’s OAuth 2.0 authorization flow over HTTPS. Reasonable measures are taken to protect tokens and any data in transit, including keeping credentials out of public code, pages, and messages.</p>
+        <p>No method of transmission or storage is completely secure. If you believe your Pinterest account or an authorization has been compromised, change your Pinterest password and revoke the App’s access immediately (see the next section).</p>
+      </section>
+
+      <section id="choices" aria-labelledby="h-choices">
+        <h2 id="h-choices"><span class="num">08</span>Your choices &amp; revoking access</h2>
+        <p>Authorization is optional and revocable. You can withdraw the malikmorg App’s access at any time:</p>
+        <ul>
+          <li>In Pinterest, go to your account <strong>Settings</strong> and review the apps / permissions connected to your account, then remove this App; or</li>
+          <li>Disconnect the Pinterest connection in the tool where you connected it.</li>
+        </ul>
+        <p>Once revoked, the App can no longer retrieve your account, boards, or pins through the API. You may also contact the operator (below) to ask what, if anything, is retained and to request its deletion.</p>
+        <div class="plain-note">
+          <p>If you authorized this App and would like your accessed data deleted, contact the operator with your Pinterest username and the request will be honored promptly.</p>
+        </div>
+      </section>
+
+      <section id="cookies" aria-labelledby="h-cookies">
+        <h2 id="h-cookies"><span class="num">09</span>Cookies &amp; tracking on this page</h2>
+        <p>This malikmorg privacy policy page itself sets <strong>no cookies</strong>, runs <strong>no analytics</strong>, and contains <strong>no advertising trackers</strong>. It is a static informational page.</p>
+      </section>
+
+      <section id="children" aria-labelledby="h-children">
+        <h2 id="h-children"><span class="num">10</span>Children’s privacy</h2>
+        <p>The App is a personal tool for the operator’s own Pinterest account and is not directed at children. It does not knowingly access or collect personal information from children under 13 (or the minimum age required in your jurisdiction).</p>
+      </section>
+
+      <section id="changes" aria-labelledby="h-changes">
+        <h2 id="h-changes"><span class="num">11</span>Changes to this policy</h2>
+        <p>If the App’s permissions or practices change — for example, if write access were ever requested — this page will be updated first, the “Last updated” date at the top will change, and new Pinterest authorization would be required before any expanded access takes effect.</p>
+      </section>
+
+      <section id="contact" aria-labelledby="h-contact">
+        <h2 id="h-contact"><span class="num">12</span>Contact</h2>
+        <p>Questions about this policy or about data accessed through the malikmorg App can be directed to the operator:</p>
+        <ul>
+          <li><strong>Operator / Brand:</strong> malikmorg — Malik Morgan</li>
+          <li><strong>Pinterest:</strong> @malikmorgan16</li>
+          <li><strong>Scope of the App:</strong> read-only access to the authorized account, boards, and pins (<code>user_accounts:read</code>, <code>boards:read</code>, <code>pins:read</code>)</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>malikmorg — Privacy Policy for a personal read-only Pinterest integration</p>
+        <p>Last updated November 6, 2026</p>
+      </footer>
+    </main>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    var map = {};
+    links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){
+          links.forEach(function(a){ a.classList.remove('active'); });
+          var link = map[e.target.id];
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    document.querySelectorAll('main section[id]').forEach(function(s){ obs.observe(s); });
+  })();
+</script>
+</body>
+</html>
